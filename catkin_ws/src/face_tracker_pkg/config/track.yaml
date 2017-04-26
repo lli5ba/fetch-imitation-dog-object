@@ -1,0 +1,14 @@
+image_input_topic: "/camera/rgb/image_raw"
+face_detected_image_topic: "/face_detector/raw_image"
+haar_file_face: "/home/turtlebot/catkin_ws/src/face_tracker_pkg/data/face.xml"
+face_tracking: 1
+display_original_image: 0
+display_tracking_image: 1
+screenmaxx: 640
+screenmaxy: 480
+K_x:  90 # Proportional K for Pan (horizontal) [this gets divided by 1000]
+K_y:  90 # Proportional K for Tilt (vertical) [this gets divided by 1000]
+F_x: 546 # Focal Length in x direction in pixels [from calibration camera_matrix 1,1]
+F_y: 546 # Focal Length in y direction in pixels [from calibration camera_matrix 2,2]
+targetThresholdPrct_x: 5 # +/- percent of total pan angle to consider target within center
+targetThresholdPrct_y: 5 # +/- percent of total tilt angle to consider target within center

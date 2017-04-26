@@ -1,0 +1,17 @@
+<launch>
+
+
+<!-- Launching USB CAM launch files and Dynamixel controllers -->
+
+  <!--<include file="$(find face_tracker_pkg)/launch/start_usb_cam.launch"/>  --> 
+  <include file="$(find face_tracker_pkg)/launch/start_tracking.launch"/> 
+  <include file="$(find fido_pkg)/launch/start_pan_tilt_servos.launch"/>
+
+
+<!-- Starting face tracker controller node -->
+    <!-- <rosparam file="$(find fido_pkg)/config/pan.yaml" command="load"/> -->
+    <!-- <rosparam file="$(find fido_pkg)/config/servo_param.yaml" command="load"/> -->
+
+    <!-- <node name="pan_tilt_control" pkg="fido_pkg" type="pan_tilt_control_node" output="screen" /> -->
+
+</launch>

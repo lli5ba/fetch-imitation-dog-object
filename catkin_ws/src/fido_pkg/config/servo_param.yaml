@@ -1,0 +1,13 @@
+#servomaxx: 90   #max degree servo horizontal (x) can turn
+#servomin: -90   # Min degree servo horizontal (x) can turn
+#screenmaxx: 640   #max screen horizontal (x)resolution
+#screenmaxy: 480   #max screen vertical (y)resolution
+#center_offset: 50  #offset pixels from actual center to right and left
+#step_distancex: 5 #x servo degree steps
+K_x:  55 # Proportional K for Pan (horizontal) [this gets divided by 1000]
+K_y:  55 # Proportional K for Tilt (vertical) [this gets divided by 1000]
+F_x: 546 # Focal Length in x direction in pixels [from calibration camera_matrix 1,1]
+F_y: 546 # Focal Length in y direction in pixels [from calibration camera_matrix 2,2]
+
+
+

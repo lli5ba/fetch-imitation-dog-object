@@ -1,0 +1,13 @@
+<launch>
+
+
+<!-- Launching OPEN NI2 launch files for the Asus Xtion camera -->
+
+  <include file="$(find openni2_launch)/launch/openni2.launch"/> 
+
+<!-- Starting face tracker node -->
+   <rosparam file="$(find face_tracker_pkg)/config/track.yaml" command="load"/>
+
+   <node name="face_tracker" pkg="face_tracker_pkg" type="face_tracker_node" output="screen" />
+
+</launch>
